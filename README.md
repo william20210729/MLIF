@@ -17,10 +17,13 @@
 
 3. Run
    python run_MLIF_BERT.py
+   
+   Before running the model, you can update parameters in the file run_MLIF_BERT.py：
+   
+   - parameters settings
 
-Before running the model, you can update parameters in the file run_MLIF_BERT.py：
-　　### parameters settings
-　　parser = argparse.ArgumentParser(description='the MLIF-BERT Model')
+```
+   parser = argparse.ArgumentParser(description='the MLIF-BERT Model')
 
 　　parser.add_argument('--model', type=str, default="MLIF_BERT", help='choose a model，models are put in the models folder') 
 
@@ -35,6 +38,7 @@ Before running the model, you can update parameters in the file run_MLIF_BERT.py
 　　parser.add_argument('--dataset_folder', type=str, default='zongdiaosolution6', help='set the folder where data is（must have a data sub-folder）') 
 
 　　parser.add_argument('--layercount', type=str, default="12", help='the number of top CLS')
+```
 
 
 
